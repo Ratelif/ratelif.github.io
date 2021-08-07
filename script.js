@@ -60,8 +60,8 @@ let displays = index => {
    pictures.setAttribute('src', data[index].photo);
    title.textContent = data[index].title
    description.textContent = data[index].description
-   thumbnails.forEach(pic => pic.classList.remove('active'))
-   thumbnails[index].classList.add('active')
+   thumbnails.forEach(pic => pic.children[0].classList.remove('active'))
+   thumbnails[index].children[0].classList.add('active')
 }
 
 thumbnails.forEach(pic => {pic.addEventListener('click', (event)=>{

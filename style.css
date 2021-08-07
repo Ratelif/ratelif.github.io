@@ -77,9 +77,14 @@ main {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.image:hover {
+.image img:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.image:hover .hover-text {
+  display: block;
+  opacity: 1;
 }
 
 .image img {
@@ -96,5 +101,21 @@ main {
 }
 
 .thumbnails .active {
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.thumbnails .image {
+  position: relative;
+}
+
+.image .hover-text {
+  position: absolute;
+  background: coral;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  top: -15px;
+  left: 5px;
+  display: none;
+  font-size: 15px;
 }
