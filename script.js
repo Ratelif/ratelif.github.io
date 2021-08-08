@@ -4,7 +4,7 @@ const description = document.querySelector('#photo-description')
 const thumbnails = document.querySelectorAll('.image')
 const aLeft = document.querySelector('.a-left')
 const aRight = document.querySelector('.a-right')
-
+const picContent = document.querySelector('.pic-content')
 let index = 0
 
 let data = [
@@ -62,6 +62,10 @@ let displays = index => {
    description.textContent = data[index].description
    thumbnails.forEach(pic => pic.children[0].classList.remove('active'))
    thumbnails[index].children[0].classList.add('active')
+   picContent.classList.add('fade-in')
+   setTimeout(()=> {
+      picContent.classList.remove('fade-in')
+   }, 500)
 }
 
 thumbnails.forEach(pic => {pic.addEventListener('click', (event)=>{
