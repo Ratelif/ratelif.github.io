@@ -130,3 +130,69 @@ main {
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
+
+@media (max-width: 960px) {
+  main {
+    width: 670px;
+    height: 450px;
+  }
+
+  .thumbnails {
+    width: 670px;
+  }
+
+  .container .arrow {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .gray-container {
+    padding: 10px;
+  }
+
+  .gray-container h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+
+  .gray-container p {
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 670px) {
+  main {
+    width: 540px;
+    height: 370px;
+  }
+
+  .thumbnails {
+    padding: 0 8px;
+    margin-top: 20px;
+    width: 540px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .container .arrow {
+    padding: 7px;
+    font-size: 25px;
+  }
+
+  .gray-container {
+    padding: 8px;
+  }
+
+  .gray-container h1 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+
+  .gray-container p {
+    line-height: 13px;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+}
